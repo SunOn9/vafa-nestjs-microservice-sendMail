@@ -16,7 +16,7 @@ export class AppController {
   }
 
   @EventPattern('reset_password')
-  handleResetPassword(data : ResetPasswordEvent) {
-    return this.appService.handleResetPassword(data);
+  handleResetPassword(event : ResetPasswordEvent) {
+    return this.appService.handleResetPassword(event);
   }
 }

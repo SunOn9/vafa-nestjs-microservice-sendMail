@@ -29,7 +29,7 @@ export class AppService {
     this.mailService.sendMail({
       to: event.data.email,
       subject: 'Reset Your Password',
-      template: './resetPassword', 
+      template: './chagePassword', 
       context: { 
         name: event.data.email,
         url,
